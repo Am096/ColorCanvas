@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">ColorCanvas</h1>
+      <div class="darkModeIcon">
+        <i class="fa-regular fa-moon" id="darkMode"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="selectColorHeader">
+          <input type="color" name="seedColorSelect" id="seedColorSelect" />
+          <select name="modeChoice" id="modeChoice">
+            <option value="monochrome" selected>Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+        </div>
+
+        <div class="colorSchemeGeneratedpanel">
+          <div class="schemeGenerated" id="One">
+            <span class="One footer">#000000</span>
+          </div>
+          <div class="schemeGenerated" id="Two">
+            <span class="Two footer">#1A1919</span>
+          </div>
+          <div class="schemeGenerated" id="Three">
+            <span class="Three footer">#343232</span>
+          </div>
+          <div class="schemeGenerated" id="Four">
+            <span class="Four footer">#4F4A4A</span>
+          </div>
+          <div class="schemeGenerated" id="Five">
+            <span class="Five footer">#6A6262</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="toastBox"></div>
+  </body>
+</html>

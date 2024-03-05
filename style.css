@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #dcdcdc;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container {
+    margin: 20px auto;
+    width: 600px;
+    background-color: #fff;
+}
+
+.selectColorHeader {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#modeChoice,
+#seedColorSelect {
+    height: 60px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+#seedColorSelect {
+    width: 85px;
+}
+
+#modeChoice {
+    color: #010a20;
+    font-weight: 600;
+}
+
+#modeChoice {
+    font-size: 1.3rem;
+    width: 350px;
+}
+
+
+
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 8px;
+}
+
+.colorSchemeGeneratedpanel {
+    height: 460px;
+    background-color: darkslateblue;
+    display: flex;
+    cursor: pointer;
+}
+
+.schemeGenerated {
+    width: 120px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.schemeGenerated span {
+    background-color: white;
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    margin: 0 auto;
+}
+
+#One {
+    background-color: #000000;
+}
+
+#Two {
+    background-color: #1A1919;
+}
+
+#Three {
+    background-color: #343232;
+}
+
+#Four {
+    background-color: #4F4A4A;
+}
+
+#Five {
+    background-color: #6A6262;
+}
+
+.darkModeIcon {
+    font-size: 2.5rem;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.toast {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast i {
+    margin: 0 20px;
+    font-size: 2rem;
+    color: green;
+}
